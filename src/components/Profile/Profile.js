@@ -1,9 +1,13 @@
 import React from 'react';
 import './Profile.css';
 import Header from '../Header/Header.js';
+import {connect} from 'react-redux';
 
-export default class Profile extends React.Component {
+class Profile extends React.Component {
    render() {
+
+      const {firstName, lastName} = this.props;
+
       return(
          <div>
             <Header componentName="Profile"/>
@@ -13,9 +17,9 @@ export default class Profile extends React.Component {
                   <div className="profile-top-container">
                      <img src="https://robohash.org/me" alt="profile image" className="profile-image"/>
                      <div className="profile-name-container">
-                        <span className="profile-name">First_Name</span>
+                        <span className="profile-name">{firstName}</span>
                         <br />
-                        <span className="profile-name">Last_Name</span>
+                        <span className="profile-name">{lastName}</span>
                      </div>
                      <div className="profile-button-right">
                         <button className="profile-update-button">Update</button>
@@ -66,3 +70,12 @@ export default class Profile extends React.Component {
       ) 
    }
 }
+
+function mapStateToProps(state) {
+   return {
+      firstName: state.firstName
+      , lastName: state.lastName
+   }
+}
+
+export default connect(mapStateToProps)(Profile);

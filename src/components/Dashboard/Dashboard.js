@@ -2,9 +2,13 @@ import React from 'react';
 import './Dashboard.css';
 import Header from '../Header/Header.js';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 
-export default class Profile extends React.Component {
+class Profile extends React.Component {
    render() {
+
+      const {firstName, lastName} = this.props;
+
       return(
          <div>
             <Header componentName="Dashboard"/>
@@ -17,8 +21,8 @@ export default class Profile extends React.Component {
                            <img src="https://robohash.org/me" alt="user-photo" className="user-photo"/>
                         </div>
                         <div className="user-info-right">
-                           <span className="user-info-name">First_Name</span>
-                           <span className="user-info-name">Last_Name</span>
+                           <span className="user-info-name">{firstName}</span>
+                           <span className="user-info-name">{lastName}</span>
                            <Link to='/profile'>
                               <button className="edit-profile-button">Edit Profile</button>
                            </Link>
@@ -46,3 +50,12 @@ export default class Profile extends React.Component {
       )
    }
 }
+
+function mapStateToProps(state) {
+   return {
+      firstName: state.firstName
+      , lastName: state.lastName
+   }
+}
+
+export default connect(mapStateToProps)(Profile)
