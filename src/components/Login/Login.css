@@ -6,5 +6,66 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: linear-gradient(99deg,#ff70a6,#ff9770 40%,#ffd670 73%,#e9ff70);
+   background-image: linear-gradient(99deg,#ff70a6,#ff9770 40%,#ffd670 73%,#e9ff70);
 }
+
+.login-child-container {
+   width: 496px;
+   height: 392px;
+   display: flex;
+   flex-direction: column;
+   border-radius: 8px;
+   background-image: linear-gradient(128deg,rgba(64,61,57,.1),hsla(0,0%,100%,.2));
+   box-shadow: 0 14px 28px 0 rgba(0,0,0,.25), 0 10px 10px 0 rgba(0,0,0,.26);
+}
+
+.login-logo-container {
+   width: 100%;
+   height: 75%;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-logo {
+   width: 120px;
+   margin-top: 34px;
+}
+
+.logo-text {
+   margin-top: 10px;
+   font-size: 100px;
+   color: white;
+   font-weight: 700;
+   font-family: Open Sans,sans-serif;
+}
+
+.login-button-container {
+   width: 100%;
+   height: 25%;
+   display: flex;
+   justify-content: center;
+}
+
+.login-button {
+   width: 70%;
+   border-radius: 3px;
+   border-color: #403d39;
+   height: 45px;
+   background-color: #403d39;
+   font-family: Open Sans,sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.login-button-text {
+   font-family: Open Sans,sans-serif;
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+/* cursor: pointer */
