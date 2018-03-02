@@ -1,0 +1,74 @@
+.header-parent-container {
+   height: 60px;
+   min-width: 1200px;
+   margin-bottom: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(97deg,#ff7a6e,#ff9770);
+   box-shadow: 0 10px 20px 0 rgba(0,0,0,.1), 0 6px 6px 0 rgba(0,0,0,.2);
+}
+
+.header-child-container {
+   height: 100%;
+   width: 80%;
+   min-width: 1000px;
+   box-sizing: border-box;
+   padding: 0 20px;
+   display: flex;
+}
+
+.header-left {
+   width: 20%;
+   display: flex;
+   align-items: center;
+}
+
+.helo-text {
+   font-weight: 700;
+   font-family: Open Sans,sans-serif;
+   color: white;
+   font-size: 30px;
+   margin-right: 20px;
+}
+
+.header-home {
+   height: 27px;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+.header-search {
+   height: 27px;
+   cursor: pointer;
+   position: relative;
+   top: 2px;
+}
+
+.header-center {
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.component-name {
+   font-family: Open Sans,sans-serif;
+   color: white;
+   font-size: 20px;
+}
+
+.header-left {
+   width: 20%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.header-logout {
+   color: white;
+   font-size: 17px;
+   cursor: pointer;
+   font-family: Open Sans,sans-serif;
+
+}
