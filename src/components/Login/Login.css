@@ -1,0 +1,10 @@
+.login-parent-container {
+   width: 100%;
+   min-width: 600px;
+   height: 100vh;
+   min-height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: linear-gradient(99deg,#ff70a6,#ff9770 40%,#ffd670 73%,#e9ff70);
+}
