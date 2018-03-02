@@ -1,0 +1,114 @@
+.profile-parent-container {
+   width: 100%;
+   height: 680px;
+   display: flex;
+   justify-content: center;
+}
+
+.profile-child-container {
+   display: flex;
+   align-items: center;
+   width: 80%;
+   height: 630px;
+   flex-direction: column;
+}
+
+.profile-top-container {
+   width: 841px;
+   box-sizing: border-box;
+   height: 146px;
+   padding: 10px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   background: white;
+   border-radius: 2px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.profile-image {
+   width: 120px;
+   border: 3px solid #ff9770;
+}
+
+.profile-name-container {
+   margin-left: 20px;
+}
+
+.profile-name {
+   font-size: 25px;
+   font-weight: 700;
+   font-family: Open Sans,sans-serif;
+   line-height: 30px;
+}
+
+.profile-button-right {
+   width: auto;
+   position: absolute;
+   right: 0;
+}
+
+.profile-update-button {
+   width: 100px;
+   font-size: 14px;
+   margin-right: 20px;
+   height: 35px;
+   border-radius: 1px;
+   background-image: radial-gradient(circle at 50% -46%,#737373,#403d39);
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+}
+
+.profile-cancel-button {
+   height: 35px;
+   border-radius: 1px;
+   background-image: radial-gradient(circle at 50% 0,#fff,#f1eceb);
+   border: 1px solid #ccc3c3;
+   cursor: pointer;
+   width: 100px;
+   font-size: 14px;
+   margin-right: 20px;
+}
+
+.profile-edit-container {
+   width: 841px;
+   box-sizing: border-box;
+   margin-top: 30px;
+   height: 450px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   background: white;
+   border-radius: 2px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.profile-edit-container-child {
+   width: 80%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.profile-user-input-container {
+   display: flex;
+   flex-direction: column;
+}
+
+.profile-user-input-title {
+   font-family: Open Sans,sans-serif;
+   box-sizing: border-box;
+   padding-left: 15px;
+   margin-bottom: 3px;
+}
+
+.profile-user-input-field {
+   font-family: Open Sans,sans-serif;
+   border: 1px solid #ff9770;
+   font-size: 20px;
+   padding: 6px;
+   margin-bottom: 10px;
+   box-sizing: border-box;
+}

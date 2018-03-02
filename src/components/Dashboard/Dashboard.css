@@ -1,0 +1,119 @@
+.dashboard-parent-container {
+   width: 100%;
+   min-width: 1200px;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+}
+
+.dashboard-child-container {
+   width: 80%;
+   min-width: 1000px;
+}
+
+.dashboard-child-top {
+   display: flex;
+   justify-content: center;
+}
+
+.user-info {
+   width: 321px;
+   height: 150px;
+   background-color: white;
+   border-radius: 2px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+   display: flex;
+}
+
+.user-photo-container {
+   width: 150px;
+   height: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+}
+
+.user-photo {
+   border: 3px solid #ff9770;
+   width: 123px;
+}
+
+.user-info-right {
+   width: calc(100% -150px);
+   height: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.user-info-name {
+   font-weight: 700;
+   font-family: Open Sans,sans-serif;
+   display: block;
+   margin-bottom: 8px;
+   font-size: 24px;
+}
+
+.edit-profile-button {
+   width: 150px;
+   font-size: 16px;
+   height: 35px;
+   border-radius: 1px;
+   background-image: radial-gradient(circle at 50% 0,#fff,#f1eceb);
+   border: 1px solid #ccc3c3;
+   cursor: pointer;
+   font-family: Open Sans,sans-serif;
+}
+
+.welcome-text-container {
+   width: 500px;
+   height: 150px;
+   display: flex;
+   margin-left: 20px;
+   box-sizing: border-box;
+   padding: 15px;
+   background: white;
+   border-radius: 2px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.welcome-text {
+      font-family: Open Sans,sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+}
+
+.dashboard-recommended-parent {
+   width: 100%;
+   height: auto;
+   min-height: 200px;
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.dashboard-recommended-child {
+   background: white;
+   border-radius: 2px;
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+   width: 841px;
+}
+
+.dashboard-recommended-header {
+   width: 100%;
+   height: 50px;
+   box-sizing: border-box;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.dashboard-recommended-title {
+   font-family: Open Sans,sans-serif;
+   font-size: 25px;
+}

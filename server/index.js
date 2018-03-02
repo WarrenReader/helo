@@ -53,10 +53,13 @@ passport.deserializeUser((profile, done) => {
 //ENDPOINTS
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
-   successRedirect: 'http://localhost:3000/#/profile'
+   successRedirect: 'http://localhost:3000/#/dashboard'
    , failureRedirect: 'http://localhost:3000'
 }))
-
+app.get('/auth/logout', (req, res) => {
+   req.logOut();
+   res.redirect('http://localhost:3000');
+})
 
 //SERVER LISTENING
 app.listen(SERVER_PORT, () => console.log(`Listening on ${SERVER_PORT}`));
