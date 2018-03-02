@@ -15,7 +15,7 @@ export default class Login extends React.Component {
                </div>
 
                <div className="login-button-container">
-                     <a href="#" className="login-button">
+                     <a href="http://localhost:3030/auth" className="login-button">
                         <span className="login-button-text">Login / Register</span>
                      </a>
                </div>
